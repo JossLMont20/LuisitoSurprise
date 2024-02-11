@@ -1,0 +1,92 @@
+body{
+  margin: 0;
+  padding: 100px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b1522;
+  flex-direction: column;
+}
+@keyframes palpitar {
+  0%{transform: rotate(45deg) scale(1.10)}
+  80%{transform: rotate(45deg) scale(1.0);}
+  100%{transform: rotate(45deg) scale(0.8);}
+}
+.heart-container {
+  position: relative;
+  width: 250px; /* Ajusta el ancho según el tamaño del corazón */
+  height: 250px; /* Ajusta la altura según el tamaño del corazón */
+}
+.heart{
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  position: relative;
+  transform: rotate(45deg);
+  box-shadow: -20px 20px 150px #f20044;
+}
+.heart::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: red;
+  right: 50%;
+  border-radius: 50%;
+  box-shadow: 20px 20px 150px #f20044;
+}
+.heart::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: red;
+  top: -50%;
+  border-radius: 50%;
+  box-shadow: 20px 20px 150px #f20044;
+}
+.heartbeat{
+  animation: palpitar 0.5s linear infinite alternate; 
+}
+.content{
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-family: "Loved by the King", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  width: 100%;
+  top: 10%;
+  left: 0;
+  transform: translate(0%, -5%);
+}
+.div-btn {
+  display: flex;
+  flex-direction: column; /* Establece la dirección como columna */
+  justify-content: center;
+  align-items: center; /* Alinea los elementos en el centro */
+  margin-bottom: 10px;
+}
+
+#magicButton {
+  padding: 10px 20px;
+  font-size: 26px;
+  color: red;
+  background-color: transparent;
+  border-color: #f20044;
+  margin-top: 20px; /* Ajusta según tu diseño */
+  border-radius: 12px;
+  font-family: "Loved by the King", cursive;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.dedicatoria{
+  color: white;
+  font-family: "Loved by the King", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
