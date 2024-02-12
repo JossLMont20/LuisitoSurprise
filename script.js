@@ -4,7 +4,12 @@ const messages = [
   "Tienes un corazón hermoso 💙",
   "Eres la luz que ilumina mis días 💙",
   "Eres el niño de mis ojos 💙",
-  "Te amo con todo mi corazón 💙"
+  "Te amo con todo mi corazón 💙",
+  "Tu amor es mi refugio en la tormenta 💙",
+  "Cada momento a tu lado es un regalo del cielo 💙",
+  "Contigo, el mundo parece un lugar más hermoso 💙",
+  "Eres la melodía que nunca deja de sonar en mi corazón 💙",
+  "En tus brazos encuentro el hogar que siempre buscaba 💙" 
 ];
 
 // Función para obtener un mensaje aleatorio
